@@ -1,0 +1,237 @@
+$color_black:  #030200;
+$color_celeste: lightcyan;
+$color_blanco: rgba(255, 255, 255, 0.849);
+$center: center;
+$fxe: flex-end;
+$rem: 1rem;
+
+@mixin flex-justify ($flex , $center){
+    display: $flex;
+    justify-content: $center;
+}
+@mixin flex-row {
+    display: flex;
+flex-direction: row;
+}
+@mixin flex-col {
+    display: flex;
+flex-direction: column;
+}
+%flex-col  {
+@include flex-col
+}
+%flex-justify {
+@include flex-justify (flex , center)
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+body {
+    @extend %flex-col;
+    background-color: $color_black;
+    height: 100vh;
+    justify-content: space-between;
+.navbar-dark .navbar-toggler {
+    border-color: $color_celeste;
+}
+.navbar-toggler-icon {
+    width: $rem;
+    height: $rem;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+    margin: $rem;
+}
+
+p, a, li, h5, h6 {
+    color: $color_blanco;
+}
+.menu {
+    @extend %flex-col;
+    width: 100%;
+    font-size: $rem - 0.2;
+    align-items: $center;
+}
+.menu a:hover {
+    transition: 2s;
+    color: $color_celeste;
+    font-weight: 600px;
+    font-size: $rem + 0.5;
+}
+.titulo {
+    color: $color_celeste;
+    margin-top: 20px;
+    font-family: "benne";
+    font-size: $rem;
+    font-weight: 600;
+}
+.title {
+    @extend %flex-justify;
+    height: 60px;
+}
+.pie {
+    @include flex-col;
+    margin: $rem;
+}
+.pie h5 {
+    font-family: "architects daughter";
+    font-size: $rem+ 0.2;
+    margin-left: $rem*2;
+}
+.pie li {
+    font-size: $rem;
+}
+.pie h6 {
+    font-size: $rem - 0.2;
+    margin-right: $rem*4;
+}
+.dataPie div {
+    margin-right: $rem;
+}
+.dataPie {
+    @include flex-col;
+        align-items: $center;
+}
+.pieEncabezado {
+align-self: flex-start;
+    width: 100%;
+}
+.autorPie {
+    align-self: $center;
+}
+.dataPie img {
+    margin-bottom: 30px;
+    margin-right: 7px;
+    margin-left: 15px;
+}
+.navbar>.container, .navbar>.container-fluid {
+    @extend %flex-justify;
+}
+}
+@media only screen and (min-width: 480px) {
+    body {
+    .menu {
+        @include flex-row;
+        justify-content: $fxe;
+    }
+    .navbar>.container, .navbar>.container-fluid {
+        @include flex-justify(flex, flex-end);
+        margin-right: $rem*4;
+    }
+    .title {
+        @include flex-justify(flex, flex-start);
+        margin-left: 20px;
+    }
+    .titulo {
+        font-size: $rem+0.5;
+    }
+    .dataPie {
+        @include flex-row;
+        flex-wrap: wrap;
+    }
+}
+}
+@media only screen and (min-width: 760px) {
+body { 
+    .menu {
+        justify-content: $fxe;
+    }
+    .title {
+        @include flex-justify(flex, flex-start);
+        align-items: $center;
+    }
+    .titulo {
+        font-size: $rem+1.2;
+        margin-top: 50px;
+    }
+    .dataPie {
+        justify-content: $fxe;
+    }
+}
+}
+@media only screen and (min-width: 1200px) {
+    body {
+        .menu {
+        @include flex-row;;
+        width: 100%;
+        font-size: $rem+0.2;
+        justify-content: $fxe;
+    }
+}
+    .navbar {
+        height: 50px;
+    }
+    .titulo {
+        margin-left: 0px;
+        margin-top: 50px;
+        font-family: "benne";
+        font-size: $rem*3;
+    }
+    
+    .pie {
+        @include flex-col;
+        margin: $rem;
+    }
+    .pie h5 {
+        font-family: "architects daughter";
+        font-size: $rem+1.2;
+        margin-left: $rem*2;
+    }
+    .pie li {
+        font-size: $rem;
+    }
+    .pie h6 {
+        font-size: $rem;
+    }
+    .dataPie h6 {
+        font-size: $rem+0.2;
+    }
+    .dataPie {
+        @include flex-row;
+        justify-content: $fxe;
+    }
+    
+    .pieEncabezado {
+    align-self: flex-start;
+        width: 100%;
+    }
+    .autorPie {
+        align-self: $center;
+    }
+    .w-100 {
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 780px;
+        width: 100%;
+    }
+    .navbar>.container, .navbar>.container-fluid {
+        justify-content: $fxe;
+        margin-right: $rem - 1;
+    }
+    .carousel-caption {
+        margin-bottom: 600px;
+        position: absolute;
+    }
+    .carousel-inner {
+        height: 720px;
+    }
+    .carousel-indicators {
+        margin-bottom: 370px;
+    }
+   .carousel-item {
+    transition: transform .8s ease-in-out;
+   }
+   .dataPie {
+       margin-bottom: 20px;
+   }
+}
+
+
+
+
+

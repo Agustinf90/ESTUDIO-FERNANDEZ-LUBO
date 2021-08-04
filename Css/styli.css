@@ -1,0 +1,322 @@
+body, body .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .title, body .navbar > .container, body .navbar > .container-fluid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #030200;
+  height: 100vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .navbar-dark .navbar-toggler {
+  border-color: lightcyan;
+}
+
+body .navbar-toggler-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body li {
+  list-style: none;
+  margin: 1rem;
+}
+
+body p, body a, body li, body h5, body h6 {
+  color: rgba(255, 255, 255, 0.849);
+}
+
+body .menu {
+  width: 100%;
+  font-size: 0.8rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .menu a:hover {
+  -webkit-transition: 2s;
+  transition: 2s;
+  color: lightcyan;
+  font-weight: 600px;
+  font-size: 1.5rem;
+}
+
+body .titulo {
+  color: lightcyan;
+  margin-top: 20px;
+  font-family: "benne";
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+body .title {
+  height: 60px;
+}
+
+body .pie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem;
+}
+
+body .pie h5 {
+  font-family: "architects daughter";
+  font-size: 1.2rem;
+  margin-left: 2rem;
+}
+
+body .pie li {
+  font-size: 1rem;
+}
+
+body .pie h6 {
+  font-size: 0.8rem;
+  margin-right: 4rem;
+}
+
+body .dataPie div {
+  margin-right: 1rem;
+}
+
+body .dataPie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .pieEncabezado {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  width: 100%;
+}
+
+body .autorPie {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+body .dataPie img {
+  margin-bottom: 30px;
+  margin-right: 7px;
+  margin-left: 15px;
+}
+
+@media only screen and (min-width: 480px) {
+  body .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  body .navbar > .container, body .navbar > .container-fluid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-right: 4rem;
+  }
+  body .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-left: 20px;
+  }
+  body .titulo {
+    font-size: 1.5rem;
+  }
+  body .dataPie {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 760px) {
+  body .menu {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  body .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .titulo {
+    font-size: 2.2rem;
+    margin-top: 50px;
+  }
+  body .dataPie {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  body .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    font-size: 1.2rem;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .navbar {
+    height: 50px;
+  }
+  .titulo {
+    margin-left: 0px;
+    margin-top: 50px;
+    font-family: "benne";
+    font-size: 3rem;
+  }
+  .pie {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 1rem;
+  }
+  .pie h5 {
+    font-family: "architects daughter";
+    font-size: 2.2rem;
+    margin-left: 2rem;
+  }
+  .pie li {
+    font-size: 1rem;
+  }
+  .pie h6 {
+    font-size: 1rem;
+  }
+  .dataPie h6 {
+    font-size: 1.2rem;
+  }
+  .dataPie {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .pieEncabezado {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    width: 100%;
+  }
+  .autorPie {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .w-100 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 780px;
+    width: 100%;
+  }
+  .navbar > .container, .navbar > .container-fluid {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-right: 0rem;
+  }
+  .carousel-caption {
+    margin-bottom: 600px;
+    position: absolute;
+  }
+  .carousel-inner {
+    height: 720px;
+  }
+  .carousel-indicators {
+    margin-bottom: 370px;
+  }
+  .carousel-item {
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+    transition: transform .8s ease-in-out, -webkit-transform .8s ease-in-out;
+  }
+  .dataPie {
+    margin-bottom: 20px;
+  }
+}
+/*# sourceMappingURL=styli.css.map */

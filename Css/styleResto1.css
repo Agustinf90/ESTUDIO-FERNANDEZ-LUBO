@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: #030200;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.navbar-dark .navbar-toggler {
+    border-color: lightcyan;
+}
+.navbar-toggler-icon {
+    width: 1em;
+    height: 1em;
+}
+p.card-text {
+    color: white;
+    text-align: justify;
+}
+h5.card-title {
+    color:white;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+.abogados h2 {
+    text-align: center;
+    margin-top: 2rem;
+}
+li {
+    list-style: none;
+    margin: 1rem;
+}
+.menu {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-size: 0.8rem;
+    align-items: center;
+}
+.menu a:hover {
+    color: lightcyan;
+}
+.titulo {
+    color: lightcyan;
+    margin-top: 20px;
+    font-family: "benne";
+    font-size: 1rem;
+    font-weight: 600;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+}
+.paisaje {
+    display: none;
+}
+p, a, li, h2, strong, h5, h6{
+    color: rgba(255, 255, 255, 0.849);
+}
+label {
+    color: white;
+    font-size: 1.4rem;   
+}
+.formulario_boot {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lightseagreen;
+    width: 40%;
+    border: white solid;
+    height: 480px;
+}
+.formulario_boot div {
+    margin-bottom: 10px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+#boton_formulario {
+    align-self: flex-end;
+    margin-bottom: 2rem;
+}
+button {
+    background-color: lightseagreen;
+    border: solid 2px white;
+    font-family: 'Montserrat';
+    color: white;
+    font-size: 1.4rem;
+    padding: 0.2rem;
+    border-radius: .25rem;
+}
+.consulta {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+}
+.menu {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-size: 0.8rem;
+    align-items: center;
+}
+input {
+    display: flex;
+}
+.pie {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+.pie h5 {
+    font-family: "architects daughter";
+    font-size: 1rem;
+    margin-left: 2rem;
+}
+.pie li {
+    font-size: 1rem;
+}
+.pie h6 {
+    font-size: 0.8rem;
+    margin-right: 4rem;
+}
+.dataPie div {
+    margin-right: 1rem;
+}
+.dataPie {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+.pieEncabezado {
+align-self: flex-start;
+    width: 100%;
+}
+.autorPie {
+    align-self: center;
+}
+.navbar>.container, .navbar>.container-fluid {
+    justify-content: center;
+}
+.centro_servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.centro_servicios img {
+    display: none;
+}
+.centro_contacto {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.abogados {
+    display: flex;
+flex-direction: row;
+height: 900px;
+margin-top: 40px;
+justify-content: center;
+margin-left: auto;
+margin-right: auto;
+}
+.col img{
+    display: none;
+}
+
+
+@media only screen and (min-width: 480px) {
+    .menu {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .navbar>.container, .navbar>.container-fluid {
+        justify-content: flex-end;
+        margin-right: 4rem;
+    }
+    .title {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 20px;
+    }
+    .titulo {
+        font-size: 1.5rem;
+    }
+    .dataPie {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .centro_servicios {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly; 
+        margin-top: 50px;
+        margin-bottom: 50px; 
+    }
+    .cuadros_servicios {
+        height: 300px;
+        width: 430px;
+        background-color: lightseagreen;
+        border: solid white 2px;
+        margin-bottom: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .data_servicios {
+        height: 240px;
+        font-size: 1rem;
+        text-align: justify;
+        width: 90%;
+        margin-top: 20px;
+    }
+    .centro_servicios strong {
+        margin-left: 0.5rem;
+    }
+    .centro_servicios img {
+        height:40px;
+        display: initial;
+        margin-top: 5px;
+    }
+}
+@media only screen and (min-width: 760px) {
+    .menu {
+        justify-content: flex-end;
+    }
+    .navbar {
+        margin-bottom: 10px;
+    }
+    .title {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .titulo {
+        font-size: 2.2rem;
+        margin-top: 50px;
+    }
+    .dataPie {
+        justify-content: flex-end;
+    }
+    .paisaje {
+        display:initial;
+        width: 100%;
+    }
+    .foto1 {
+        height: 200px;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        width: 100%;
+        z-index: 1;
+        position: absolute;
+    }
+    .foto2 {
+        z-index: 2;
+        position: relative;
+        width: 155px;
+        height: 130px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+        border: solid white;
+        margin-top: 135px;
+    }
+    .col {
+        height: 420px;
+        width: 300px;
+    }
+    .h-100 {
+        background-color: lightseagreen;
+    }
+    .col img{
+    display: initial;
+}
+}
+
+@media only screen and (min-width: 1200px) {
+    .abogados {
+    height: 600px;
+    }
+    .menu {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        font-size: 1.2rem;
+        justify-content: flex-end;
+    }
+    .navbar {
+        height: 50px;
+        margin-bottom: 10px;
+    }
+    .titulo {
+        margin-left: 0px;
+        margin-top: 50px;
+        font-family: "benne";
+        font-size: 3rem;
+    }
+    
+    .pie {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }
+    .pie h5 {
+        font-family: "architects daughter";
+        font-size: 1.5rem;
+        margin-left: 2rem;
+    }
+    .pie li {
+        font-size: 1rem;
+    }
+    .pie h6 {
+        font-size: 1rem;
+    }
+    .dataPie h6 {
+        font-size: 1.2rem;
+    }
+    .dataPie {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    
+    .pieEncabezado {
+    align-self: flex-start;
+        width: 100%;
+    }
+    .autorPie {
+        align-self: center;
+    }
+    .w-100 {
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 780px;
+        width: 100%;
+    }
+    .navbar>.container, .navbar>.container-fluid {
+        justify-content: flex-end;
+        margin-right: 0rem;
+    }
+    table {
+        align-self: flex-start;
+    }
+   
+    
+    .paisaje {
+       display: none;
+    }
+    .centro_servicios strong {
+        font-size: 1.8rem;
+        margin-top: 0.5rem;
+    }
+    .form-label {
+        width: 250px;
+    }
+
+    .centro {
+        display: flex;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+    }
+    .centro h2 {
+        display: flex;
+    justify-content: center;
+    }
+    .centro p {
+        margin-left: 2rem;
+        text-align: justify;
+    margin-right: 2rem;
+    margin-top: 4rem;
+    }
+    .centro img {
+        width: 50%;
+        margin-right: 2rem;
+    }
+    .dataPie img {
+        margin-bottom: 30px;
+        margin-right: 7px;
+        margin-left: 15px;
+    }
+    .dataPie div {
+     margin-right: 1rem;
+     margin-left: 0.4rem;
+    }
+    .dataPie {
+        margin-bottom: 20px;
+    }
+    .autorPie {
+     align-self: center;
+     display: flex;
+     flex-grow: 1;
+     align-items: flex-end;
+    }
+    .menu li a:hover{
+     transition: 2s;
+     font-size: 1.5rem;
+     color: lightskyblue;
+ } 
+ 
+}
+
+
+
+
+
