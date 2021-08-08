@@ -1,0 +1,25 @@
+{
+  "name": "Estudio Fernandez Lubo",
+  "version": "1.0.0",
+  "description": "Sitio web del Estudio Juridíco más completo de la Patagonia Argentina",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""   
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Agustinf90/ESTUDIO-FERNANDEZ-LUBO.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Agustinf90/ESTUDIO-FERNANDEZ-LUBO/issues"
+  },
+  "homepage": "https://github.com/Agustinf90/ESTUDIO-FERNANDEZ-LUBO#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12"
+  }
+}
