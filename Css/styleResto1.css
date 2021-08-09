@@ -73,9 +73,9 @@ label {
     display: flex;
     flex-wrap: wrap;
     background-color: lightseagreen;
-    width: 40%;
+    width: 80%;
     border: white solid;
-    height: 480px;
+    height: 780px;
 }
 .formulario_boot div {
     margin-bottom: 10px;
@@ -163,7 +163,7 @@ align-self: flex-start;
 .abogados {
     display: flex;
 flex-direction: row;
-height: 900px;
+height: 600px;
 margin-top: 40px;
 justify-content: center;
 margin-left: auto;
@@ -172,9 +172,21 @@ margin-right: auto;
 .col img{
     display: none;
 }
+.centro img{
+    display: none;
+}
+.h-100 {
+    background-color: black;
+}
+.mapa {
+    display: none;
+}
 
 
 @media only screen and (min-width: 480px) {
+    .abogados {
+    width: 400px;
+    }
     .menu {
         flex-direction: row;
         justify-content: flex-end;
@@ -229,8 +241,21 @@ margin-right: auto;
         display: initial;
         margin-top: 5px;
     }
+    .centro img{
+        display: initial;
+    }
+    
 }
 @media only screen and (min-width: 760px) {
+    .formulario_boot {
+        width: 60%;
+        border: white solid;
+        height: 480px;
+    }
+    .abogados {
+        width: 100%;
+        height: 900px;
+        }
     .menu {
         justify-content: flex-end;
     }
@@ -275,7 +300,7 @@ margin-right: auto;
     }
     .col {
         height: 420px;
-        width: 300px;
+        width: 260px;
     }
     .h-100 {
         background-color: lightseagreen;
@@ -286,8 +311,19 @@ margin-right: auto;
 }
 
 @media only screen and (min-width: 1200px) {
+    .formulario_boot {
+        width: 40%;
+        border: white solid;
+        height: 480px;
+    }
+    .mapa {
+        display: initial;
+    }
     .abogados {
     height: 600px;
+    }
+    .col {
+        width: 300px;
     }
     .menu {
         display: flex;
