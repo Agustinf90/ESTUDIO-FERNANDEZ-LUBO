@@ -294,12 +294,12 @@ margin-right: auto;
         display: block;
         margin-left: auto;
         margin-right: auto;
-        border-radius: 50%;
+        border-radius: 42%;
         border: solid white;
         margin-top: 135px;
     }
     .col {
-        height: 420px;
+        height: 460px;
         width: 260px;
     }
     .h-100 {

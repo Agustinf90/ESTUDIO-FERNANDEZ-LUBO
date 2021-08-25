@@ -59,6 +59,7 @@ body .menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+          padding-left: 0rem;
 }
 
 body .menu a:hover {
@@ -232,16 +233,17 @@ body .dataPie img {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-  .navbar {
+  body .navbar {
     height: 50px;
+    margin-bottom: 10px;
   }
-  .titulo {
+  body .titulo {
     margin-left: 0px;
     margin-top: 50px;
     font-family: "benne";
     font-size: 3rem;
   }
-  .pie {
+  body .pie {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -251,21 +253,21 @@ body .dataPie img {
             flex-direction: column;
     margin: 1rem;
   }
-  .pie h5 {
+  body .pie h5 {
     font-family: "architects daughter";
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     margin-left: 2rem;
   }
-  .pie li {
+  body .pie li {
     font-size: 1rem;
   }
-  .pie h6 {
+  body .pie h6 {
     font-size: 1rem;
   }
-  .dataPie h6 {
+  body .dataPie h6 {
     font-size: 1.2rem;
   }
-  .dataPie {
+  body .dataPie {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -293,7 +295,10 @@ body .dataPie img {
     height: 780px;
     width: 100%;
   }
-  .navbar > .container, .navbar > .container-fluid {
+  body .navbar > .container, body .navbar > .container-fluid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
