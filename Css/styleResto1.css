@@ -10,6 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 1.5rem;
 }
 .navbar-dark .navbar-toggler {
     border-color: lightcyan;
@@ -33,6 +34,9 @@ a {
     text-align: center;
     margin-top: 2rem;
 }
+.centro h2 {
+    font-size: 1rem;
+}
 li {
     list-style: none;
     margin: 1rem;
@@ -45,9 +49,20 @@ li {
     align-items: center;
 }
 .menu a:hover {
+    -webkit-transition: 2s;
+    transition: 2s;
     color: lightcyan;
-}
-.titulo {
+    font-weight: 600px;
+    font-size: 1.5rem;
+  }
+  .titulo a:hover {
+    -webkit-transition: 2s;
+    transition: 2s;
+    color: lightcyan;
+    font-weight: 600px;
+    font-size: 1.8rem;
+  }
+.titulo a {
     color: lightcyan;
     margin-top: 20px;
     font-family: "benne";
@@ -111,6 +126,9 @@ button {
 input {
     display: flex;
 }
+.centro p {
+    text-align: justify;
+}
 .pie {
     display: flex;
     flex-direction: column;
@@ -119,26 +137,37 @@ input {
 .pie h5 {
     font-family: "architects daughter";
     font-size: 1rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
+    margin-left: auto;
+  margin-right: auto;
 }
 .pie li {
     font-size: 1rem;
 }
 .pie h6 {
     font-size: 0.8rem;
-    margin-right: 4rem;
+    margin-right: auto;
+    margin-left: auto;
 }
 .dataPie div {
     margin-right: 1rem;
 }
 .dataPie {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
 }
 .pieEncabezado {
-align-self: flex-start;
-    width: 100%;
+display: flex;
 }
 .autorPie {
     align-self: center;
@@ -181,7 +210,11 @@ margin-right: auto;
 .mapa {
     display: none;
 }
-
+.dataPie img {
+    margin-bottom: 30px;
+    margin-right: 7px;
+    margin-left: 15px;
+}
 
 @media only screen and (min-width: 480px) {
     .abogados {
@@ -200,12 +233,17 @@ margin-right: auto;
         justify-content: flex-start;
         margin-left: 20px;
     }
-    .titulo {
+    .titulo a {
+        font-size: 1.5rem;
+    }
+    .centro h2 {
         font-size: 1.5rem;
     }
     .dataPie {
         flex-direction: row;
         flex-wrap: wrap;
+        margin-left: 0;
+        margin-right: 0;
     }
     .centro_servicios {
         display: flex;
@@ -243,10 +281,17 @@ margin-right: auto;
     }
     .centro img{
         display: initial;
+        width: 100%
     }
+   .dataPie {
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: 0;
+        margin-right: 0;
+      }
     
 }
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 770px) {
     .formulario_boot {
         width: 60%;
         border: white solid;
@@ -254,7 +299,7 @@ margin-right: auto;
     }
     .abogados {
         width: 100%;
-        height: 900px;
+        height: 600px;
         }
     .menu {
         justify-content: flex-end;
@@ -267,12 +312,17 @@ margin-right: auto;
         justify-content: flex-start;
         align-items: center;
     }
-    .titulo {
-        font-size: 2.2rem;
+    body .titulo a:hover {
+        font-size: 3.2rem;
+    }
+    .titulo a {
+        font-size: 2.7rem;
         margin-top: 50px;
     }
     .dataPie {
-        justify-content: flex-end;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     }
     .paisaje {
         display:initial;
@@ -289,7 +339,7 @@ margin-right: auto;
     .foto2 {
         z-index: 2;
         position: relative;
-        width: 155px;
+        width: 160px;
         height: 130px;
         display: block;
         margin-left: auto;
@@ -299,14 +349,39 @@ margin-right: auto;
         margin-top: 135px;
     }
     .col {
-        height: 460px;
-        width: 260px;
+        height: 560px;
+        width: 240px;
+    }
+    .card-text {
+        margin-top: 1rem;
+    }
+    .card-title {
+        font-size: 1rem;
     }
     .h-100 {
         background-color: lightseagreen;
     }
     .col img{
     display: initial;
+}
+.dataPie {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.pieEncabezado {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    width: 100%;
+}
+.pie h5 {
+  font-size: 1.5rem;
+  margin-left: 0;
+    margin-right: 0;
 }
 }
 
@@ -323,6 +398,7 @@ margin-right: auto;
     height: 600px;
     }
     .col {
+        height: 470px;
         width: 300px;
     }
     .menu {
@@ -336,7 +412,7 @@ margin-right: auto;
         height: 50px;
         margin-bottom: 10px;
     }
-    .titulo {
+    .titulo a {
         margin-left: 0px;
         margin-top: 50px;
         font-family: "benne";
@@ -414,7 +490,7 @@ margin-right: auto;
         margin-left: 2rem;
         text-align: justify;
     margin-right: 2rem;
-    margin-top: 4rem;
+    margin-top: 2.5rem;
     }
     .centro img {
         width: 50%;
@@ -438,12 +514,6 @@ margin-right: auto;
      flex-grow: 1;
      align-items: flex-end;
     }
-    .menu li a:hover{
-     transition: 2s;
-     font-size: 1.5rem;
-     color: lightskyblue;
- } 
- 
 }
 
 

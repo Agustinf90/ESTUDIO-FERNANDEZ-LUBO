@@ -29,6 +29,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+          margin: 1.5rem;
 }
 
 body .navbar-dark .navbar-toggler {
@@ -70,7 +71,15 @@ body .menu a:hover {
   font-size: 1.5rem;
 }
 
-body .titulo {
+body .titulo a:hover {
+  -webkit-transition: 2s;
+  transition: 2s;
+  color: lightcyan;
+  font-weight: 600px;
+  font-size: 1.8rem;
+}
+
+body .titulo a{
   color: lightcyan;
   margin-top: 20px;
   font-family: "benne";
@@ -95,8 +104,9 @@ body .pie {
 
 body .pie h5 {
   font-family: "architects daughter";
-  font-size: 1.2rem;
-  margin-left: 2rem;
+  font-size: 1rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body .pie li {
@@ -105,7 +115,8 @@ body .pie li {
 
 body .pie h6 {
   font-size: 0.8rem;
-  margin-right: 4rem;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 body .dataPie div {
@@ -123,11 +134,12 @@ body .dataPie {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+          margin-left: auto;
+          margin-right: auto;
 }
 
 body .pieEncabezado {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  display: flex;
   width: 100%;
 }
 
@@ -174,23 +186,18 @@ body .dataPie img {
             justify-content: flex-start;
     margin-left: 20px;
   }
-  body .titulo {
+  body .titulo a {
     font-size: 1.5rem;
   }
   body .dataPie {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 770px) {
   body .menu {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -207,15 +214,32 @@ body .dataPie img {
         -ms-flex-align: center;
             align-items: center;
   }
-  body .titulo {
-    font-size: 2.2rem;
+  body .titulo a:hover {
+    font-size: 3.2rem;
+  }
+  body .titulo a {
+    font-size: 2.7rem;
     margin-top: 50px;
   }
   body .dataPie {
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-left: 0;
+      margin-right: 0;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
+  .pieEncabezado {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    width: 100%;
+}
+body .pie h5 {
+  font-size: 1.5rem;
+  margin-left: 0;
+    margin-right: 0;
+}
 }
 
 @media only screen and (min-width: 1200px) {
@@ -237,7 +261,7 @@ body .dataPie img {
     height: 50px;
     margin-bottom: 10px;
   }
-  body .titulo {
+  body .titulo a {
     margin-left: 0px;
     margin-top: 50px;
     font-family: "benne";
